@@ -20,6 +20,7 @@ const Commits: FC = () => {
         commits.map((commit) => (
           <SingleCommit
             key={commit.id}
+            id={commit.id}
             authorName={commit.authorName}
             message={commit.message}
             date={commit.date}

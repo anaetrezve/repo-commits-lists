@@ -1,8 +1,19 @@
 .single-commit {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   line-height: 1.5;
 }
 
 .single-commit p {
   margin: 0;
+}
+
+.single-commit a {
+  text-decoration: none;
+  color: #2c3e50;
+  display: inline-block;
+  padding: 12px;
+}
+
+.single-commit:hover {
+  background-color: #f4f7f8;
 }
