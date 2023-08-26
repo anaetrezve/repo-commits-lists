@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Commits from './containers/Commits';
+import Commits from './containers/commits/Commits';
 import Layout from './layouts/Layout';
 import NoMatch from './layouts/NoMatch';
 

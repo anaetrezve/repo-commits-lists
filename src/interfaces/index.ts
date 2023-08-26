@@ -1,8 +1,3 @@
-export interface GetCommitsProps {
-  owner: string;
-  repo: string;
-}
+export * from './commit';
+export * from './githubResponse';
 
-export interface CommitsResponse {
-  user: string;
-}

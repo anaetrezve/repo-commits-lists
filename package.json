@@ -25,7 +25,10 @@
   "eslintConfig": {
     "extends": [
       "wesbos/typescript"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/no-unsafe-argument": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -40,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "dotenv": "^16.3.1",
     "eslint": "^8.47.0",
     "eslint-config-wesbos": "^3.2.3",
     "prettier": "^2.8.8",
