@@ -1,0 +1,9 @@
+.no-match {
+  margin: 100px auto 0;
+  width: 300px;
+  text-align: center;
+}
+
+.no-match h1 {
+  font-size: 45px;
+}

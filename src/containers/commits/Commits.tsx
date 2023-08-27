@@ -2,9 +2,7 @@ import { FC } from 'react';
 import SingleCommit from '../../components/singleCommit/SingleCommit';
 import useCommits from '../../hooks/useCommits';
 import './Commits.css';
-
-const OWNER = 'facebook';
-const REPO = 'react';
+import { REPO, OWNER } from '../../constants';
 
 const Commits: FC = () => {
   const { commits, error, loading } = useCommits({ repo: REPO, owner: OWNER });

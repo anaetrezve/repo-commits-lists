@@ -7,6 +7,8 @@ export const getErrorMessage = (statusCode: number): string => {
       return 'Bad request';
     case 404:
       return 'Not found';
+    case 422:
+      return 'Invalid';
     case 409:
       return 'Conflict';
     case 500:

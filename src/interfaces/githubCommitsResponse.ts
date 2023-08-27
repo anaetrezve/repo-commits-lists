@@ -5,14 +5,14 @@ export interface CommitResponse {
   url: string;
   html_url: string;
   comments_url: string;
-  author: Author2;
-  committer: Committer2;
+  author: Author;
+  committer: Committer;
   parents: Parent[];
 }
 
 export interface CommitObj {
-  author: Author;
-  committer: Committer;
+  author: CommitAuthor;
+  committer: CommitCommitter;
   message: string;
   tree: Tree;
   url: string;
@@ -20,13 +20,13 @@ export interface CommitObj {
   verification: Verification;
 }
 
-export interface Author {
+export interface CommitAuthor {
   name: string;
   email: string;
   date: string;
 }
 
-export interface Committer {
+export interface CommitCommitter {
   name: string;
   email: string;
   date: string;
@@ -44,7 +44,7 @@ export interface Verification {
   payload: string;
 }
 
-export interface Author2 {
+export interface Author {
   login: string;
   id: number;
   node_id: string;
@@ -65,7 +65,7 @@ export interface Author2 {
   site_admin: boolean;
 }
 
-export interface Committer2 {
+export interface Committer {
   login: string;
   id: number;
   node_id: string;

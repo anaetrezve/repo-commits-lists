@@ -1,0 +1,14 @@
+.file-stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.file {
+  margin-bottom: 15px;
+}
+
+.file p {
+  margin: 0;
+  line-height: 1.8;
+}

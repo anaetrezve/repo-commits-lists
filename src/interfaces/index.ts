@@ -1,3 +1,4 @@
 export * from './commit';
-export * from './githubResponse';
+export * from './githubCommitResponse';
+export * from './githubCommitsResponse';
 

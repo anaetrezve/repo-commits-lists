@@ -1,33 +1,35 @@
 import { useEffect, useState } from 'react';
-import { Commit, Repo } from '../interfaces/commit';
-import { getCommits } from '../services';
+import { CommitDetail, SingleCommitPayload } from '../interfaces';
+import { getCommit } from '../services';
 
-const useCommits = ({ owner, repo }: Repo) => {
-  const [commits, setCommits] = useState<Commit[]>([]);
+const useCommit = ({ repo, owner, commitId }: SingleCommitPayload) => {
+  const [commitData, setCommitData] = useState<CommitDetail>(
+    {} as CommitDetail
+  );
   const [error, setError] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     setLoading(true);
-    getCommits({
-      owner,
+    getCommit({
       repo,
+      owner,
+      commitId,
     }).then((data) => {
       if (!data.error) {
-        setCommits(data.commits);
+        setCommitData(data.commit);
       } else {
         setError(data.errorMessage);
       }
       setLoading(false);
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return {
-    commits,
+    commit: commitData,
     error,
     loading,
   };
 };
 
-export default useCommits;
+export default useCommit;

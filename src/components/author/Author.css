@@ -1,0 +1,14 @@
+.author-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar img {
+  margin-right: 10px;
+  border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.author-avatar span {
+}
