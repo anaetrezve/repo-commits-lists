@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Github token
+
+Before starting the project you will need to add `REACT_APP_GITHUB_API_TOKEN` in `.env` file with a github personal access token.
+
 ## Available Scripts
 
 In the project directory, you can run:
