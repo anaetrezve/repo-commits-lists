@@ -7,7 +7,7 @@ interface AuthorProps {
 }
 
 const Author: FC<AuthorProps> = ({ avatarUrl, name }) => (
-  <div className="author-avatar">
+  <div className="author-avatar" data-testid="author-avatar">
     <img src={avatarUrl} alt={name} />
     <span>{name}</span>
   </div>

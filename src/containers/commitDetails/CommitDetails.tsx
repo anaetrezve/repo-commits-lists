@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import Author from '../../components/author/Author';
-import ChangedFileComponent from '../../components/changeFile/ChangedFile';
+import ChangedFileComponent from '../../components/changedFile/ChangedFile';
 import CommitStat from '../../components/stats/CommitStat';
 import { OWNER, REPO } from '../../constants';
 import useCommit from '../../hooks/useCommit';

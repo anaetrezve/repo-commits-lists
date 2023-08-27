@@ -3,7 +3,7 @@ import { Stats } from '../../interfaces';
 import './CommitStat.css';
 
 const CommitStat: FC<Stats> = ({ total, additions, deletions }) => (
-  <div className="stats">
+  <div className="stats" data-testid="commit-stats">
     <span>
       <strong>Total file Changed: </strong>
       {total}
